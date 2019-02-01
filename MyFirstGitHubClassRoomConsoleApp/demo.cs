@@ -1,4 +1,5 @@
-﻿using System.Security.AccessControl;
+﻿using System;
+using System.Security.AccessControl;
 
 namespace MyFirstGitHubClassRoomConsoleApp
 {
@@ -13,6 +14,20 @@ namespace MyFirstGitHubClassRoomConsoleApp
             _navn = Navn;
             _alder = Alder;
             
+        }
+        public string Navn
+        {
+            get { return _navn; }
+        }
+
+        public int Alder
+        {
+            get { return _alder; }
+        }
+
+        public void Print()
+        {
+            Console.WriteLine($"Mit navn er {Navn} og jeg er {Alder} år gammel.");
         }
 
     }
